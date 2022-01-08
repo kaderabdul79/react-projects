@@ -1,0 +1,15 @@
+.navbar-nav{
+    background-color: blanchedalmond;
+    text-decoration: none;
+}
+
+.customstyle ul{
+    font-size: large;
+    text-decoration: none;
+}
+.customstyleli{
+    display: inline-block;
+    color: cadetblue;
+    padding: 8px 10px;
+    font-size: 15px;
+}
