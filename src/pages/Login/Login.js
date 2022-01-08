@@ -26,8 +26,8 @@ const Login = () => {
             <input type="submit" value="Login" className="btn btn-primary" />
             </form>
             <br />
-            <Link to="/register">Create an account ?</Link>
-            
+            <Link to="/register">Create an account ?</Link><br />
+            <button type="button" className="btn btn-secondary">Signin Using Google</button>
         </div>
     );
 };
