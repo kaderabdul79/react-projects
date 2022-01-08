@@ -1,8 +1,10 @@
 import React , {useState} from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
     const [loginData,setLoginData] = useState('')
+    const {user} = useAuth()
 
     const handleOnBlur = e => {
         const field = e.target.name;
@@ -12,7 +14,9 @@ const Login = () => {
         setLoginData(newLoginData);
         console.log(newLoginData)
     }
-
+    {
+        console.log({user})
+    }
     const handleLoginSubmit = e => {
        
         e.preventDefault()
