@@ -2,12 +2,13 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Navigation from './components/Shared/Navigation/Navigation';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
+import Class from './pages/Class/Class';
+import Register from './pages/Register/Register';
 
 function App() {
   return (
@@ -15,11 +16,20 @@ function App() {
       <Router>
         <Navigation></Navigation>
         <Switch>
-          <Route exact to="/">
+          <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route to="/login">
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/class">
+            <Class></Class>
+          </Route>
+          <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
         </Switch>
       </Router>
