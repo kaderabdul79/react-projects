@@ -11,6 +11,7 @@ import Class from './pages/Class/Class';
 import Register from './pages/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import Students from './pages/Students/Students';
+import StudentsDetails from './pages/StudentsDetails/StudentsDetails';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path="/students">
               <Students></Students>
+            </Route>
+            <Route path="/students/:id">
+              <StudentsDetails></StudentsDetails>
             </Route>
             <Route path="/login">
               <Login></Login>
