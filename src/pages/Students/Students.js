@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import Student from '../Student/Student';
 
 const Students = () => {
-    const [students,setStudents] = useState({})
+    const [students,setStudents] = useState([])
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(res => res.json())
@@ -9,7 +10,7 @@ const Students = () => {
     })
     return (
         <div>
-            {students.length}
+            {students.map(student => <Student key={student.id} student={student}></Student>)}
         </div>
     );
 };
