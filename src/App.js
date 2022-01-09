@@ -10,6 +10,7 @@ import Login from './pages/Login/Login';
 import Class from './pages/Class/Class';
 import Register from './pages/Register/Register';
 import AuthProvider from './context/AuthProvider';
+import Students from './pages/Students/Students';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
             </Route>
             <Route path="/class">
               <Class></Class>
+            </Route>
+            <Route path="/students">
+              <Students></Students>
             </Route>
             <Route path="/login">
               <Login></Login>

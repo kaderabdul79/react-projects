@@ -21,6 +21,9 @@ const Navigation = () => {
                         <Link to="/class">JoinClass</Link>
                     </li>
                     <li className="nav-item customstyleli">
+                        <Link to="/students">Students</Link>
+                    </li>
+                    <li className="nav-item customstyleli">
                         <Link to="/register">Register</Link>
                     </li>
                     <li className="nav-item customstyleli">
