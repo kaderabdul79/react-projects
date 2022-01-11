@@ -11,7 +11,8 @@ const StudentsDetails = () => {
     })
     return (
         <div>
-            {students.name}
+            <h3>{students.name}</h3>
+            <h3>{students.email}</h3>
         </div>
     );
 };
