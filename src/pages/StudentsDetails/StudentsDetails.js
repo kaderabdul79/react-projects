@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const StudentsDetails = () => {
     const {id} = useParams()
@@ -13,6 +13,7 @@ const StudentsDetails = () => {
         <div>
             <h3>{students.name}</h3>
             <h3>{students.email}</h3>
+            <button><Link to="/">Go to Home</Link></button>
         </div>
     );
 };
