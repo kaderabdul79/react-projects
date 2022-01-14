@@ -36,7 +36,7 @@ const Register = () => {
                 <input type="password" name="password2" onBlur={handleOnBlur} placeholder="Retype password" /><br /><br />
                 <input type="submit" value="Register" className="btn btn-primary" />
                 <br />
-            <Link to="/login">Already you have an account ?</Link>
+                <Link to="/login">Already you have an account ?</Link>
              </form>
         </div>
     );

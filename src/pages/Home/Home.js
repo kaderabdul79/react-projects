@@ -5,7 +5,7 @@ import StudentCard from '../../components/Shared/Navigation/StudentCard/StudentC
 const Home = () => {
     return (
         <div>
-            Our Homepage!
+            Our Homepage!!
             <StudentCard></StudentCard>
         </div>
     );
